@@ -1,4 +1,7 @@
 # Joshua's Everything Store
+
+### https://joshuliu.github.io/Joshuas-Everything-Store/
+
 A basic static HTML website written from scratch, featuring usage of CSS, Javascript, and jQuery. This website is the final project of a short HTML/CSS/JS course I took, in which I was instructed to put everything I learned together creatively.
 
 ## Notes
