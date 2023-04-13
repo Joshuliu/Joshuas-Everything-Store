@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<title>Josh's Everything Store - Veggies</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="https://i.ebayimg.com/images/g/x5gAAOSwotxgu4Ag/s-l1600.jpg">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<script async src="https://cse.google.com/cse.js?cx=123:456"></script>
+		<script src="assets/js/jquery-1.9.1.js"></script>
+		<script src="assets/js/script.js"></script>
+	</head>
+	<body>
+
+		<!-- Login popup -->
+		<div id="modal-container">
+			<div id="modal-overlay"></div>
+				<div id="modal-box">
+					<!-- Q2: Your Content for Modal Box Here -->
+					<div id="modal-header">Login</div>
+					<div id="modal-content">
+						<input type="text" class="input" id="user" placeholder="Enter username">
+						<input type="password" class="input" id="pass" placeholder="Enter password">
+					</div>
+					<div id="modal-footer">
+						<button id="submit" class="modal-button">Submit</button>
+						<button id="cancel" class="modal-button">Cancel</button>
+					</div>
+				</div>
+		</div>
+
+		<!-- Navigation Bar -->
+		<div id="navbar">
+            <img id="thumbnail" src="https://i.ebayimg.com/images/g/x5gAAOSwotxgu4Ag/s-l1600.jpg" onclick="window.location.href = 'index.html'">
+            <button class="navbuttons" onclick="window.location.href = 'fruits.html'">Fruits</button>
+            <button id="stacked" class="navbuttons" onclick="window.location.href = 'vegetables.html'">Vegetables</button>
+			<input id="search" placeholder="Search the Store">
+			<button id="login" class="navbuttons">Log in</button>
+		</div>
+
+		<!-- Front Banner -->
+		<div id="banner">
+			<a class="front" id="title">JOSH'S VEGGIES</a>
+			<a class="front" id="desc">High quality home grown vegetables, organic from trusted sources.</a>
+		</div>
+
+        <div id="main">
+            <div class="carousel-item" id="first" onclick="window.location.href = 'vegetables/lettuce.html'">
+                <img class="carousel-img" src="https://www.thespruce.com/thmb/PWkixszv28kUB6Pfk0PCdLa8Yf0=/3067x2300/smart/filters:no_upscale()/how-to-grow-fresh-delicious-lettuce-1403404-3-0c9662567b52457a9f55828604f36b74.jpg"></img>
+                <div class="item">100 Aged Lettuce
+                    <div class="price">$310.24</div>
+                </div>
+            </div>
+            <div class="carousel-item" onclick="window.location.href = 'vegetables/cabbage.html'">
+                <img class="carousel-img" src="https://media.istockphoto.com/photos/green-cabbage-isolated-on-white-picture-id673162168?k=20&m=673162168&s=612x612&w=0&h=3QKF6zzzCAUL3pKxW6kVbZ7lUt1JUY_SchOUMyOHwhs=" ></img>
+                <div class="item">Big Ball Cabbage
+                    <div class="price">$941.59</div>
+                </div>
+            </div>
+            <div class="carousel-item" id="last" onclick="window.location.href = 'vegetables/spinach.html'">
+                <img class="carousel-img" src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/05/spinach-1296x728-header.jpg?w=1155&h=1528">
+                <div class="item">Expensive Spinach
+                    <div class="price">$442 (per leaf)</div>
+                </div>
+            </div>
+            <div class="carousel-item" id="first" onclick="window.location.href = 'vegetables/arugula.html'">
+                <img class="carousel-img" src="https://s.abcnews.com/images/US/200128_kgo_arugula_hpMain_1x1_608.jpg">
+                <div class="item">Ooga Booga Arugula
+                    <div class="price">$592.22</div>
+                </div>
+            </div>
+            <div class="carousel-item" onclick="window.location.href = 'vegetables/weed.html'">
+                <img class="carousel-img" src="https://cdn.vox-cdn.com/thumbor/RDMiZQo8Qu0rWJccSDQr8-pqZ34=/0x0:4170x2781/1200x800/filters:focal(1794x850:2460x1516)/cdn.vox-cdn.com/uploads/chorus_image/image/68451245/1284965683.0.jpg">
+                <div class="item">Gas Tree
+                    <div class="price">$1444.31</div>
+                </div>
+            </div>
+            <div class="carousel-item" id="last" onclick="window.location.href = 'vegetables/asparagus.html'">
+                <img class="carousel-img" src="https://www.eatlikenoone.com/wp-content/uploads/2018/04/Asparagus-1200x1200-1.jpg">
+                <div class="item">Ass-paragus
+                    <div class="price">$0.00 9/10</div>
+                </div>
+            </div>
+            <div class="carousel-item" id="first" onclick="window.location.href = 'vegetables/celery.html'">
+                <img class="carousel-img" src="https://www.gardeningknowhow.com/wp-content/uploads/2021/03/closeup-of-growing-celery-plantation.jpg">
+                <div class="item">Celery
+                    <div class="price">$2.21</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <a id="desc">Josh's Everything Store</a><br>
+            <a id="desc">Copyright 2022 © Joshua Liu</a>
+	</body>
+</html>

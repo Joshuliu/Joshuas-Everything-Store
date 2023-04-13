@@ -1,0 +1,254 @@
+body {
+	font-family: "Open Sans";
+	background-color: #eee;
+	margin: 0;
+}
+#modal-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+}
+#modal-overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    background: rgba(0, 0, 0, 0.5);
+}
+#modal-box {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* Question 3 */
+#modal-header {
+    font-size: 30;
+    font-weight: lighter;
+    color: black;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+#modal-content {
+    text-align: center;
+}
+#modal-footer {
+    float: right;
+    padding-right: 15px;
+}
+.modal-button {
+    padding: 20px;
+}
+.modal-button:hover {
+    border: 0px solid lightgray; 
+    opacity: 80%;
+}
+.input {
+    border: 2px solid lightgray; 
+    padding: 15px;
+    border-radius: 15px;
+    background: transparent;
+    margin-bottom: 20px;
+    width: 90%;
+    font-size: 12px;
+    color: black;
+    outline: 0;
+    transition: 0.3s;
+
+}
+.input::-webkit-input-placeholder { 
+    color: black;
+}
+.input:focus {
+    border: 2px solid gray;
+}
+#navbar {
+	background-color: transparent;
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	padding: 10px;
+	display: flex;
+	transition: 0.3s;
+	opacity: 90%;
+	z-index: 10;
+}
+#search {
+	flex-grow: 1;
+	margin: 10px;
+	border-radius: 10px;
+	padding: 10px;
+	outline: 0px;
+	opacity: 0;
+}
+button {
+	margin: 10px;
+	border-radius: 10px;
+	width: 100px;
+    border: 0px solid lightgray;
+    transition: 0.3s;
+}
+button:hover {
+    border: 2px solid lightgray;
+    cursor: pointer;
+}
+#thumbnail {
+	margin: 10px;
+	border-radius: 10px;
+}
+#login {
+	margin-right: 30px;
+}
+#banner {
+	display: block;
+	height: 600px;
+    background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
+    background-repeat:no-repeat;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://assets-global.website-files.com/5f2a93fe880654a977c51043/620fd215f344f16633f1aafc_hero_2.jpeg");
+	background-blend-mode: darken;
+}
+.front {
+	text-align: center;
+	color: white;
+	position: absolute;
+	margin-left: 50%;
+	-webkit-transform: translateX(-50%);
+}
+#title {
+	font-size: 48px;
+	margin-top: 250px;
+}
+#desc {
+	margin-top: 350px;
+	font-size: 18px;
+}
+
+.carousel-title {
+	font-size: 36px;
+	padding: 20px;
+}
+.carousel-desc {
+	padding: 20px;
+	padding-top: 0px;
+}
+
+.carousel-container {
+	width: 1200px;
+	height: 600px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+}
+#carousel, #carousel-veg {
+	width: 3600px;
+	height: 100%;
+	margin-left: 0px;
+	-webkit-transition: all 0.3s;
+}
+.carousel-item {
+	width: 280px;
+	margin: 25px;
+	position: relative;
+	height: 400px;
+	float: left;
+	background-color: white;
+	border-radius: 10px;
+    transition: 0.3s;
+}
+.carousel-item img {
+	max-height:100%; 
+	max-width:100%;
+	height: 300px;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.carousel-item:hover {
+	cursor: pointer;
+	box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.item {
+	font-size: 24px;
+	margin: 10px;
+}
+.price {
+	font-size: 16px;
+	margin: 10px;
+}
+#first {
+	margin-left: 130px;
+}
+#last {
+	margin-right: 130px;
+}
+#center {
+	text-align: center;
+	margin-top: 180;
+}
+.img-scaled {
+	width: 100%;
+	height: 100%;
+}
+
+/* Styling for the carousel previous button */
+#carousel-prev, #carousel-prev-veg {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 60px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s;
+}
+
+/* Styling for the carousel next button */
+#carousel-next, #carousel-next-veg {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 60px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s;
+}
+
+#white {
+	background-color: white;
+}
+.no-scroll {
+	overflow: hidden;
+}
+
+#footer {
+	background-color: black;
+	height: 100px;
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding-top: 30px;
+}
+#main {
+	height: 1400px;
+	margin: 100px;
+	align: center;
+}
+#main-item {
+	padding: 150px;
+	padding-bottom: 100px;
+}
+.item-img {
+	height: 400px;
+	width: 300px;
+    object-fit: cover;
+}

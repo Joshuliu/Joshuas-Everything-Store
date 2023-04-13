@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Josh's Everything Store - Veggies</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="https://i.ebayimg.com/images/g/x5gAAOSwotxgu4Ag/s-l1600.jpg">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script async src="https://cse.google.com/cse.js?cx=123:456"></script>
+        
+        <script src="assets/js/jquery-1.9.1.js"></script>
+        <script src="assets/js/script.js"></script>
+    </head>
+    <body>
+
+        <!-- Login popup -->
+        <div id="modal-container">
+            <div id="modal-overlay"></div>
+                <div id="modal-box">
+                    <!-- Q2: Your Content for Modal Box Here -->
+                    <div id="modal-header">Login</div>
+                    <div id="modal-content">
+                        <input type="text" class="input" id="user" placeholder="Enter username">
+                        <input type="password" class="input" id="pass" placeholder="Enter password">
+                    </div>
+                    <div id="modal-footer">
+                        <button id="submit" class="modal-button">Submit</button>
+                        <button id="cancel" class="modal-button">Cancel</button>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div id="navbar">
+            <img id="thumbnail" src="https://i.ebayimg.com/images/g/x5gAAOSwotxgu4Ag/s-l1600.jpg" onclick="window.location.href = 'index.html'">
+            <button class="navbuttons" onclick="window.location.href = 'fruits.html'">Fruits</button>
+            <button id="stacked" class="navbuttons" onclick="window.location.href = 'vegetables.html'">Vegetables</button>
+            <input id="search" placeholder="Search the Store">
+            <button id="login" class="navbuttons">Log in</button>
+        </div>
+
+        <!-- Front Banner -->
+        <div id="banner">
+            <a class="front" id="title">JOSH'S FRUITS</a>
+            <a class="front" id="desc">Fruits completely organic, carefully planted by Joshua Liu himself in his backyard.</a>
+        </div>
+
+        <div id="main">                
+            <div class="carousel-item" id="first" onclick="window.location.href = 'fruits/apple.html'">
+                <img class="carousel-img" src="https://cdn1.sph.harvard.edu/wp-content/uploads/sites/30/2018/10/apple-2711629_1920.jpg"></img>
+                <div class="item">Organic Apple
+                    <div class="price">$300.24</div>
+                </div>
+            </div>
+            <div class="carousel-item" onclick="window.location.href = 'fruits/banana.html'">
+                <img class="carousel-img" src="https://external-preview.redd.it/G_TwzwLW9NVa_4APxSFND0ik49hQBk64ehbgm3wcNCM.jpg?auto=webp&s=1559d05966e406dfab5020b679bfe1556012a3da"></img>
+                <div class="item">Long Banana
+                    <div class="price">$311.59</div>
+                </div>
+            </div>
+            <div class="carousel-item" id="last" onclick="window.location.href = 'fruits/blueberry.html'">
+                <img class="carousel-img" src="https://www.cupcakeroyale.com/wp-content/uploads/2016/07/20160719-Bow-Hill-Blueberries-145-620x413.jpg">
+                <div class="item">Fresh Blueberries
+                    <div class="price">$100 (per lb)</div>
+                </div>
+            </div>
+            <div class="carousel-item" id="first" onclick="window.location.href = 'fruits/orange.html'">
+                <img class="carousel-img" src="https://activerain.com/image_store/uploads/6/6/7/8/7/ar136142840678766.jpg">
+                <div class="item">Mildy Weird Oranges
+                    <div class="price">$259.12</div>
+                </div>
+            </div>
+            <div class="carousel-item" onclick="window.location.href = 'fruits/lemon.html'">
+                <img class="carousel-img" src="https://minnetonkaorchards.com/wp-content/uploads/2021/04/Health-Benefits-of-Lemons.jpg.webp">
+                <div class="item">Very Acidic Lemons
+                    <div class="price">$998</div>
+                </div>
+            </div>
+            <div class="carousel-item" id="last" onclick="window.location.href = 'fruits/watermelon.html'">
+                <img class="carousel-img" src="https://gray-wtvy-prod.cdn.arcpublishing.com/resizer/jZWPchG8aj1WqRdDj4YI2dnWAyA=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/KUUHPQX2RVEY7AV5UA23KN7MMQ.jpg">
+                <div class="item">Huge Watermelon
+                    <div class="price">$1444.31</div>
+                </div>
+            </div>
+            <div class="carousel-item" id="first" onclick="window.location.href = 'fruits/carrot.html'">
+                <img class="carousel-img" src="https://littleupgrades.com/wp-content/uploads/2021/02/Babycarrots_123rf_20210216-e1613478773359.jpg">
+                <div class="item">Baby Carrots
+                    <div class="price">$12.44</div>
+                </div>
+            </div>
+            <div class="carousel-item" onclick="window.location.href = 'fruits/pear.html'">
+                <img class="carousel-img" src="https://cdn.shopify.com/s/files/1/0059/8835/2052/products/Kieffer_pear_4_BB_650x.jpg?v=1629296649">
+                <div class="item">Alright Pear
+                    <div class="price">$2.21</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <a id="desc">Josh's Everything Store</a><br>
+            <a id="desc">Copyright 2022 © Joshua Liu</a>
+    </body>
+</html>

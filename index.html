@@ -1,0 +1,174 @@
+<html>
+	<head>
+		<title>Josh's Everything Store</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="icon" type="image/x-icon" href="https://i.ebayimg.com/images/g/x5gAAOSwotxgu4Ag/s-l1600.jpg">
+		<script async src="https://cse.google.com/cse.js?cx=123:456"></script>
+		<script src="assets/js/jquery-1.9.1.js"></script>
+		<script src="assets/js/script.js"></script>
+	</head>
+	<body>
+
+		<!-- Login popup -->
+		<div id="modal-container">
+			<div id="modal-overlay"></div>
+				<div id="modal-box">
+					<!-- Q2: Your Content for Modal Box Here -->
+					<div id="modal-header">Login</div>
+					<div id="modal-content">
+						<input type="text" class="input" id="user" placeholder="Enter username">
+						<input type="password" class="input" id="pass" placeholder="Enter password">
+					</div>
+					<div id="modal-footer">
+						<button id="submit" class="modal-button">Submit</button>
+						<button id="cancel" class="modal-button">Cancel</button>
+					</div>
+				</div>
+		</div>
+
+		<!-- Navigation Bar -->
+		<div id="navbar">
+			<img id="thumbnail" src="https://i.ebayimg.com/images/g/x5gAAOSwotxgu4Ag/s-l1600.jpg">
+			<button class="navbuttons" onclick="window.location.href = 'fruits.html'">Fruits</button>
+			<button id="stacked" class="navbuttons" onclick="window.location.href = 'vegetables.html'">Vegetables</button>
+			<input id="search" placeholder="Search the Store">
+			<button id="login" class="navbuttons">Log in</button>
+		</div>
+
+		<!-- Front Banner -->
+		<div id="banner">
+			<a class="front" id="title">JOSH'S EVERYTHING STORE</a>
+			<a class="front" id="desc">Buy items from Joshua Liu for prices out of this world!</a>
+		</div>
+
+        <!-- Fruits Carousel -->
+        <div class = "carousel-container">
+            <div class="carousel-title">Fruits</div>
+            <div class="carousel-desc">Fruits completely organic, carefully planted by Joshua Liu himself in his backyard.</div>
+            <div id="carousel">
+                <div class="carousel-item" id="first" onclick="window.location.href = 'fruits/apple.html'">
+                    <img class="carousel-img" src="https://cdn1.sph.harvard.edu/wp-content/uploads/sites/30/2018/10/apple-2711629_1920.jpg"></img>
+                    <div class="item">Organic Apple
+                        <div class="price">$300.24</div>
+                    </div>
+                </div>
+                <div class="carousel-item" onclick="window.location.href = 'fruits/banana.html'">
+                    <img class="carousel-img" src="https://external-preview.redd.it/G_TwzwLW9NVa_4APxSFND0ik49hQBk64ehbgm3wcNCM.jpg?auto=webp&s=1559d05966e406dfab5020b679bfe1556012a3da"></img>
+                    <div class="item">Long Banana
+                        <div class="price">$311.59</div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="last" onclick="window.location.href = 'fruits/blueberry.html'">
+                    <img class="carousel-img" src="https://www.cupcakeroyale.com/wp-content/uploads/2016/07/20160719-Bow-Hill-Blueberries-145-620x413.jpg">
+                    <div class="item">Fresh Blueberries
+                        <div class="price">$100 (per lb)</div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="first" onclick="window.location.href = 'fruits/orange.html'">
+                    <img class="carousel-img" src="https://activerain.com/image_store/uploads/6/6/7/8/7/ar136142840678766.jpg">
+                    <div class="item">Mildy Weird Oranges
+                        <div class="price">$259.12</div>
+                    </div>
+                </div>
+                <div class="carousel-item" onclick="window.location.href = 'fruits/lemon.html'">
+                    <img class="carousel-img" src="https://minnetonkaorchards.com/wp-content/uploads/2021/04/Health-Benefits-of-Lemons.jpg.webp">
+                    <div class="item">Very Acidic Lemons
+                        <div class="price">$998</div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="last" onclick="window.location.href = 'fruits/watermelon.html'">
+                    <img class="carousel-img" src="https://gray-wtvy-prod.cdn.arcpublishing.com/resizer/jZWPchG8aj1WqRdDj4YI2dnWAyA=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/KUUHPQX2RVEY7AV5UA23KN7MMQ.jpg">
+                    <div class="item">Huge Watermelon
+                        <div class="price">$1444.31</div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="first" onclick="window.location.href = 'fruits/carrot.html'">
+                    <img class="carousel-img" src="https://littleupgrades.com/wp-content/uploads/2021/02/Babycarrots_123rf_20210216-e1613478773359.jpg">
+                    <div class="item">Baby Carrots
+                        <div class="price">$12.44</div>
+                    </div>
+                </div>
+                <div class="carousel-item" onclick="window.location.href = 'fruits/pear.html'">
+                    <img class="carousel-img" src="https://cdn.shopify.com/s/files/1/0059/8835/2052/products/Kieffer_pear_4_BB_650x.jpg?v=1629296649">
+                    <div class="item">Alright Pear
+                        <div class="price">$2.21</div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="last" onclick="window.location.href = 'fruits.html'">
+                    <div class="item" id="center">See More</div>
+                </div>
+            </div>
+            <div id="carousel-prev">
+                <img class="img-scaled" src="https://img.icons8.com/ios/344/circled-chevron-left.png" />
+            </div>
+            <div id="carousel-next">
+                <img class="img-scaled" src="https://img.icons8.com/ios/344/circled-chevron-right.png" />
+            </div>
+        </div>
+
+        <!-- Vegetables Carousel -->
+        <div class = "carousel-container">
+            <div class="carousel-title">Vegetables</div>
+            <div class="carousel-desc">High quality home grown vegetables, organic from trusted sources.</div>
+            <div id="carousel-veg">
+                <div class="carousel-item" id="first" onclick="window.location.href = 'vegetables/lettuce.html'">
+                    <img class="carousel-img" src="https://www.thespruce.com/thmb/PWkixszv28kUB6Pfk0PCdLa8Yf0=/3067x2300/smart/filters:no_upscale()/how-to-grow-fresh-delicious-lettuce-1403404-3-0c9662567b52457a9f55828604f36b74.jpg"></img>
+                    <div class="item">100 Aged Lettuce
+                        <div class="price">$310.24</div>
+                    </div>
+                </div>
+                <div class="carousel-item" onclick="window.location.href = 'vegetables/cabbage.html'">
+                    <img class="carousel-img" src="https://media.istockphoto.com/photos/green-cabbage-isolated-on-white-picture-id673162168?k=20&m=673162168&s=612x612&w=0&h=3QKF6zzzCAUL3pKxW6kVbZ7lUt1JUY_SchOUMyOHwhs=" ></img>
+                    <div class="item">Big Ball Cabbage
+                        <div class="price">$941.59</div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="last" onclick="window.location.href = 'vegetables/spinach.html'">
+                    <img class="carousel-img" src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/05/spinach-1296x728-header.jpg?w=1155&h=1528">
+                    <div class="item">Expensive Spinach
+                        <div class="price">$442 (per leaf)</div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="first" onclick="window.location.href = 'vegetables/arugula.html'">
+                    <img class="carousel-img" src="https://s.abcnews.com/images/US/200128_kgo_arugula_hpMain_1x1_608.jpg">
+                    <div class="item">Ooga Booga Arugula
+                        <div class="price">$592.22</div>
+                    </div>
+                </div>
+                <div class="carousel-item" onclick="window.location.href = 'vegetables/weed.html'">
+                    <img class="carousel-img" src="https://cdn.vox-cdn.com/thumbor/RDMiZQo8Qu0rWJccSDQr8-pqZ34=/0x0:4170x2781/1200x800/filters:focal(1794x850:2460x1516)/cdn.vox-cdn.com/uploads/chorus_image/image/68451245/1284965683.0.jpg">
+                    <div class="item">Gas Tree
+                        <div class="price">$1444.31</div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="last" onclick="window.location.href = 'vegetables/asparagus.html'">
+                    <img class="carousel-img" src="https://www.eatlikenoone.com/wp-content/uploads/2018/04/Asparagus-1200x1200-1.jpg">
+                    <div class="item">Ass-paragus
+                        <div class="price">$0.00 9/10</div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="first" onclick="window.location.href = 'vegetables/celery.html'">
+                    <img class="carousel-img" src="https://www.gardeningknowhow.com/wp-content/uploads/2021/03/closeup-of-growing-celery-plantation.jpg">
+                    <div class="item">Celery
+                        <div class="price">$2.21</div>
+                    </div>
+                </div>
+                <div class="carousel-item" onclick="window.location.href = 'vegetables.html'">
+                    <div class="item" id="center">See More</div>
+                </div>
+            </div>
+            <div id="carousel-prev-veg">
+                <img class="img-scaled" src="https://img.icons8.com/ios/344/circled-chevron-left.png" />
+            </div>
+            <div id="carousel-next-veg">
+                <img class="img-scaled" src="https://img.icons8.com/ios/344/circled-chevron-right.png" />
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <a id="desc">Josh's Everything Store</a><br>
+            <a id="desc">Copyright 2022 © Joshua Liu</a><br>
+	</body>
+</html>
